@@ -6,28 +6,108 @@ body {
   background-position: center;
   height: 100vh;
   overflow-y: hidden;
+  z-index: 1;
 
 }
-.right{
-  display: inblock;
-  height: 10%;
-  max-width: 25%;
-  min-width: 10%;
+.container{
+  display:flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+/*navbar*/
+.navbar{
+  text-transform: uppercase;
+  font-size: 1em;
+  z-index: 3;
+  text-decoration: none;
+  margin-top: 3%;
+  margin-right: 5%;
+}
+.tm-navbar-menu {
+  display: block;
+  padding-right: 50px;
+  padding: 1rem;
+  width:auto;
+  background-color: white;
+  text-align: center;
+  color: black;
+  text-decoration: none;
+}
+.tm-navbar-menu:hover {
+  color: #950000;
+}
+.tm-nav-links {
+  list-style: none;
+}
+.tm-nav-link:link,
+.tm-nav-link:visited {
+  color: black;
+  background-color: white;
+  padding: 10px 40px;
+  display: block;
+  margin-bottom: 6px;
+  text-align: center;
+  text-decoration: none;
+}
+.tm-nav-item.active .tm-nav-link,
+.tm-nav-link:hover,
+.tm-nav-link:focus {
+  text-decoration: none;
+  color: #950000;
+}
+/*...Header...*/
+.header{
+  flex-basis: 25%;
+  z-index: 2;
+  display: block;
+  height:inherit;
+  max-height: 100px;
+  max-width: 300px;
   background-color: white;
   border: none;
   outline: black;
-  margin: 2%;
-  margin-left: -1.35%;
   clip-path: polygon(0 0, 100% 0,90% 50%, 100% 100%, 0 100%)
-}
-.wSize{
-  margin: 0;
-  font-size: 1em;
-  overflow-x: hidden;
-  display: grid;
-  place-items: center;
 
 }
+.h-shape{
+  font-size: 1.3vw;
+  overflow-x: hidden;
+  display: grid;
+  text-align: center;
+  margin-left: -5%;
+}
+
+/*content box*/
+.content-box{
+  display:flex;
+  justify-content: space-around;
+}
+.section-1{
+  max-width: 575px;
+  flex-direction: column-reverse;
+  color:white;
+  margin-top: 10%;
+}
+.section-1 div{
+  padding: 2%;
+  border-radius: 10px;
+}
+
+.tm-bg-dark {
+  background: rgba(255, 255, 255, 1);
+  color: #ffcce5;
+}
+.section-1 a{
+  background-color: white;
+  text-decoration: none;
+  padding: 15px 30px;
+  color: black;
+  border-radius: 5px;
+  display: inline-block;
+  margin-left: 4%;
+  margin-top: 2.5%
+}
+/*...Loader...*/
 
 #loader-wrapper {
   position: fixed;
