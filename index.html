@@ -35,24 +35,41 @@
           <!-- navbar-->
           <div class="navbar">
             <nav>
-              <a id='0' href="#" class="menu">Menu</a>
+              <a id='0' href="#" class="menu shape">Menu</a>
+              <!--HAX-->
               <div class="list closed">
                 <ul class="navlist ">
-                  <li class="navlink">
-                    <a id='info' href="#">Info</a>
+                  <li id='info' class="navlink">
+                    <div class="home-icon">
+                      <div class="roof">
+                        <div class="roof-edge"></div>
+                      </div>
+                      <div class="front"></div>
+                    </div>
+                    <a href="#">Info</a>
                   </li>
-                  <li class="navlink">
-                    <a id='about' href="#">About</a>
+                  <li id='about'class="navlink">
+                    <div class="about-icon">
+                      <div class="head">
+                        <div class="eyes"></div>
+                        <div class="beard"></div>
+                      </div>
+                    </div>
+                    <a  href="#">About</a>
                   </li>
-                  <li class="navlink">
-                    <a id='work' href="#">Work</a>
+                  <li id='work'class="navlink">
+                    <div class="work-icon">
+                      <div class="paper"></div>
+                      <div class="lines"></div>
+                      <div class="lines"></div>
+                      <div class="lines"></div>
+                    </div>
+                    <a  href="#">Work</a>
                   </li>
                 </ul>
               </div>
             </nav>
           </div>
-
-
         </div>
 
 
@@ -96,7 +113,7 @@
             <div class="hl" style="top:70%;"></div>
             <div class="hl" style="top:80%;"></div>
             <div class="hl" style="top:90%;"></div>
-            <div class="pad-container">
+            <div class="pad-container" >
               <div style="margin-left: 10%; width:50%">
                 <ul class="pinboard">
                   <div class="up">
@@ -279,6 +296,7 @@
       <script src="js/jquery-1.11.0.min.js"></script>
 
       <script>
+
         window.onload = function() {
           $("body").addClass("loaded");
         };

@@ -42,6 +42,7 @@ const navlist = document.getElementsByClassName('list')[0];
 
 toggleButton.addEventListener('click', () => {
   $(navlist).toggle("closed");
+  $('.menu').toggleClass("shape");
   $('.content-box').toggleClass("adjust")
 });
 
