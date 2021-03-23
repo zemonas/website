@@ -70,6 +70,12 @@ body {
   text-align: center;
   text-decoration: none;
 }
+.sec-1 .navlink  span{
+  display:none;
+}
+.sec-1 .navbar input{
+  display: none;
+}
 /*...Header...*/
 .header{
   flex-basis: 25%;

@@ -7,12 +7,13 @@
 
 }
 .section-3{
-  position: relative;
-  clear: both;
-  margin: 0px auto;
+  left: 40px;
+  right: 0;
+  margin: auto;
   max-width: 80%;
-  max-height: 535px;
+  height: 555px;
   overflow: hidden;
+  top:160px;
 
 }
 .slide-container{
@@ -55,4 +56,216 @@
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   background-size: cover;
+}
+.card-text {
+  grid-area:txt;
+  padding: 5px;
+}
+.card-text h2 {
+  margin-block-end:0;
+}
+.card-text h6{
+  margin-block-start:0;
+}
+.card-text p{
+    text-align:center;
+}
+.card-func {
+  grid-area: func;
+  background-color: black;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-size: cover;
+  display:grid;
+  grid-template-rows: 80px;
+  grid-template-columns: 150px 150px;
+}
+.view{
+
+  top: 0;
+  bottom: 0;
+  margin:auto;
+}
+.download{
+  top: 0;
+  bottom: 0;
+  margin:auto;
+  align-content:center;
+}
+/*navbar*/
+.sec-3 .navbar a{
+	display:none;
+}
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 32px;  /* Preferred icon size */
+  display: inline-block;
+  color:#fff;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+.sec-3 .navbar
+{
+  position:absolute;
+  left:0;
+  right:0;
+  margin:auto;
+  width:600px;
+  height:200px;
+}
+.sec-3 .navbar ul{
+  list-style:none;
+}
+.sec-3 .navbar input
+{
+  position:absolute;
+  top: 0%;
+  left:50%;
+  width:80px;
+  height:80px;
+  z-index:20;
+  border-radius: 80px;
+  opacity:0;
+  cursor:pointer;
+}
+.sec-3 .hamburger
+{
+  position:absolute;
+  top:0%;
+  left:50%;
+  width: 80px;
+  height:80px;
+  background-color: #E84F3E;
+  border-radius:100%;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.15);
+  z-index:10;
+  cursor:pointer;
+}
+.sec-3 .dots span
+{
+  position: absolute;
+  top: 45%;
+  width:8px;
+  height:8px;
+  border-radius:8px;
+  background:#fff;
+  z-index:20;
+    transition: all .3s ease-in-out;
+}
+
+.sec-3 .first
+{
+  margin-left:1em;
+}
+.sec-3 .second
+{
+
+  margin-left:2.3em;
+}
+.sec-3 .third
+{
+   margin-left:3.6em;
+}
+.sec-3 .navbar input:checked ~ .hamburger .dots .first
+{
+ top:20px;
+  height:60px;
+  transform-origin:top;
+  transform:rotate(-45deg);
+   transition: all .3s ease-in-out;
+
+}
+.sec-3 .navbar input:checked ~ .hamburger .dots .third
+{
+ top:20px;
+  height:60px;
+  transform-origin:top;
+  transform:rotate(45deg);
+   transition: all .3s ease-in-out;
+}
+.sec-3 .list
+{
+  position:absolute;
+  top:4.5%;
+  left:25%;
+  width:380px;
+  height:60px;
+  background-color: #E84F3E;
+  border-radius:60px;
+  box-shadow: 0px 5px 20px #F19181;
+  z-index:5;
+
+/*   animation-name: expand-the-bar;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out; */
+  transform:scaleX(0);
+  transition: all .3s ease-in-out;
+}
+.sec-3 .navbar input:checked ~ .list
+{
+  transform:scaleX(1);
+}
+.sec-3 .navlist span
+{
+  position: absolute;
+  top: 25%;
+  width:20px;
+  padding-left:35px;
+  opacity:0;
+  transition: all .2s ease-in-out;
+  cursor:pointer;
+}
+.sec-3 .first_item
+{
+  left:0%;
+}
+.sec-3 .second_item
+{
+  left:15%;
+}
+.sec-3 .third_item
+{
+  left:55%;
+}
+.sec-3 .fourth_item
+{
+  left:70%;
+}
+.sec-3 .navbar input:checked ~ .list .navlist .first_item
+{
+    opacity:1;
+  transition-delay:.45s;
+}
+.sec-3 .navbar input:checked ~ .list .navlist .second_item
+{
+    opacity:1;
+  transition-delay:.40s;
+
+}
+.sec-3 .navbar input:checked ~ .list .navlist .third_item
+{
+    opacity:1;
+  transition-delay:.40s;
+}
+.sec-3 .navbar input:checked ~ .list .navlist .fourth_item
+{
+    opacity:1;
+  transition-delay:.45s;
 }

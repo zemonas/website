@@ -249,6 +249,12 @@ box-shadow: 5px 5px 7px rgba(33, 33, 33, 0.7);
 .sec-2 nav ul li a{
 	display:none;
 }
+.sec-2 .navlink  span{
+  display:none;
+}
+.sec-2 .navbar input{
+  display: none;
+}
 
 .sec-2 nav ul li:after {
 	position: absolute;
@@ -470,6 +476,10 @@ box-shadow: 5px 5px 7px rgba(33, 33, 33, 0.7);
 
 .sec-2 .lines:nth-child(3):after {
 	display: none;
+}
+
+.sec-2 .menue{
+  color: #242B3E;
 }
 
 /*/*///*mail*/ //*/
