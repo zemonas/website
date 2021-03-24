@@ -10,18 +10,18 @@
     <link rel="stylesheet" href="css/section-3.css">
     <link rel="stylesheet" href="slick/slick.css">
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+
   </head>
 
   <body class="sec-1">
     <div class="background">
-      <div id="loader-wrapper">
-        <div id="loader"></div>
-        <div class="loader-section section-left"></div>
-        <div class="loader-section section-right"></div>
-      </div>
-      <div class="top-container">
+          <div id="loader-wrapper">
+           <div id="loader"></div>
+           <div class="loader-section section-left"></div>
+           <div class="loader-section section-right"></div>
+          </div>
+    <div class="top-container">
         <div class="container">
 
 
@@ -103,37 +103,6 @@
             </nav>
           </div>
         </div>
-<!--
-        <div class="FABMenu">
-
-          </div>
-          <div class="action_items_bar">
-            <div class="action_items">
-              <span class="first_item">
-                <i class="material-icons">
-                favorite
-                </i>
-              </span>
-              <span class="second_item">
-                <i class="material-icons">
-                chat
-                </i>
-              </span>
-              <span class="third_item">
-                <i class="material-icons">
-                get_app
-                </i>
-              </span>
-              <span class="fourth_item">
-                <i class="material-icons">
-                share
-                </i>
-              </span>
-            </div>
-          </div>
-        </div>
--->
-
         <!--content box-->
         <div class="content-box">
           <section class="section-1" style="">
@@ -145,13 +114,6 @@
             </div>
             <a href="#" id='another-about' class="tm-link">NEXT</a>
           </section>
-
-
-
-
-
-
-
           <section class="section-2" style="display:none;">
 
             <div class="vl" style="left:10%;"></div>
@@ -173,7 +135,7 @@
             <div class="hl" style="top:80%;"></div>
             <div class="hl" style="top:90%;"></div>
             <div class="pad-container" >
-              <div style="margin-left: 10%; width:50%">
+              <div style="margin-left: 10%;">
                 <ul class="pinboard">
                   <div class="up">
 
@@ -210,7 +172,40 @@
 
               <div class="pic-container">
                 <div class="photo">
+                  <!--radio button-->
+                  <input type="radio" name="radio-button" id="r1">
+                  <input type="radio" name="radio-button" id="r2">
+                  <input type="radio" name="radio-button" id="r3">
+                  <input type="radio" name="radio-button" id="r4">
+                  <!---->
+                  <!--slide img-->
+                  <div class="slide active">
+                    <img src="https://images.unsplash.com/photo-1526662294706-2004786e247e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1422&q=80" alt="">
+                  </div>
+                  <div class="slide ">
+                    <img src="https://images.unsplash.com/photo-1551249506-d8e2c5536f8a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=967&q=80" alt="">
+                  </div>
+                  <div class="slide ">
+                    <img src="https://images.unsplash.com/photo-1526662294706-2004786e247e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1422&q=80" alt="">
+                  </div>
+                  <div class="slide ">
+                    <img src="https://images.unsplash.com/photo-1551249506-d8e2c5536f8a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=967&q=80" alt="">
+                  </div>
+                  <!--auto nav-->
+                  <div class="nav-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                    <div class="auto-btn4"></div>
+                  </div>
+                  <!--manual nav-->
+                  <div class="nav-manual">
+                    <label for="r1" class="manual-btn"></label>
+                    <label for="r2" class="manual-btn"></label>
+                    <label for="r3" class="manual-btn"></label>
+                    <label for="r4" class="manual-btn"></label>
 
+                  </div>
                 </div>
                 <div class="why">
                   <pre>HELLO</pre>
@@ -434,13 +429,19 @@
     </footer>
     <div>
       <script src="js/jquery-1.11.0.min.js"></script>
-
       <script>
 
         window.onload = function() {
           $("body").addClass("loaded");
         };
-
+        var counter = 1;
+        setInterval(function( ){
+          document.getElementById('r'+ counter).checked = true;
+          counter++;
+          if(counter >4){
+            counter =1;
+          }
+        },3000);
       </script>
     </div>
     <script type="text/javascript" src="slick/slick.min.js"></script>

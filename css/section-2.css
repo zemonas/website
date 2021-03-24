@@ -43,7 +43,14 @@
   flex-wrap: wrap;
   min-height: 0px;
 }
-
+@media screen and (max-width:480px){
+  .pad-container{
+    display:inline-flex;
+  }
+}
+.pad-container>div{
+  margin-top: 100px;
+}
 .up{
   display: flex;
   width: 600px;
@@ -51,7 +58,12 @@
   flex-wrap: wrap;
 
 }
-
+@media screen and (max-width:480px){
+  .up{
+    display:inline-flex;
+    width: 0px;
+  }
+}
 
 ul.pinboard li,
 ul.tag-list li {
@@ -127,15 +139,17 @@ ul.pinboard li div {
 }
 .pic-container{
 text-decoration: none;
-margin:10px;
 color: #000;
 background: #ffc;
 display: block;
-margin:0 auto;
-margin-top: 5%;
+top: 20%;
+bottom: 10%;
+left: 0;
+right: 0;
+margin:auto ;
 height: 410px;
 width: 410px;
-padding: 1em;
+overflow:hidden;
 -moz-box-shadow: 5px 5px 7px #212121;
 -webkit-box-shadow: 5px 5px 7px rgba(33, 33, 33, 0.7);
 box-shadow: 5px 5px 7px rgba(33, 33, 33, 0.7);
@@ -152,15 +166,94 @@ box-shadow: 5px 5px 7px rgba(33, 33, 33, 0.7);
   position: relative;
   top: 5px;
 }
-
+@media screen and (max-width:480px){
+  .pic-container{
+    display:inline-block;
+    top: 0;
+    bottom:0;
+    left:auto;
+    right:-30px;
+    margin:auto;
+    margin-bottom: 110px;
+  }
+}
 .photo{
-  z-index: 2;
-  margin: 10px 10px 0 10px;
-  width:390px;
-  height: 292px;
-  background: url('../bgimg/cristina-gottardi-CSpjU6hYo_0-unsplash.jpg') #fcc7ea;
-  background-repeat: no-repeat no-repeat;
-  background-size: cover;
+  width:400%;
+  height: 310px;
+  display: flex;
+}
+.photo input{
+  display: none;
+}
+.slide{
+  width:25%;
+  transition:2s;
+}
+.slide img{
+  width:410px;
+  height:310px;
+}
+.nav-manual{
+  position: absolute;
+  width:410px;
+  margin-top:290px;
+  display:flex;
+  justify-content:center;
+}
+.manual-btn{
+  border:1px solid black;
+  padding: 4px;
+  border-radius: 5px;
+  cursor:pointer;
+  transition:1s;
+}
+.manual-btn:not(:last-child){
+  margin-right: 7px;
+
+}
+.manual-btn:hover{
+  background-color:white;
+}
+#r1:checked ~ .active{
+  margin-left: 0;
+}
+#r2:checked ~ .active{
+  margin-left: -25%;
+}
+#r3:checked ~ .active{
+  margin-left:-50%;
+}
+#r4:checked ~ .active{
+  margin-left:-75%;
+}
+.nav-auto{
+  position: absolute;
+  width:410px;
+  margin-top:290px;
+  display:flex;
+  justify-content:center;
+}
+.nav-auto div{
+  border:1px solid black;
+  padding: 4px;
+  border-radius: 5px;
+  cursor:pointer;
+  transition:1s;
+}
+.nav-auto div:not(:last-child){
+    margin-right: 7px;
+}
+#r1:checked ~ .nav-auto .auto-btn1{
+  background-color:white;
+}
+#r2:checked ~ .nav-auto .auto-btn2{
+  background-color:white;
+}
+#r3:checked ~ .nav-auto .auto-btn3{
+  background-color:white;
+}
+#r4:checked ~ .nav-auto .auto-btn4{
+  background-color:white;
 }
 .container,.background, .top-container{
   margin: 0;
@@ -194,6 +287,26 @@ box-shadow: 5px 5px 7px rgba(33, 33, 33, 0.7);
   margin: 0;
   padding: 0;
 }
+@media screen and (max-width:480px){
+  .sec-2 .navlist{
+    flex-direction: row;
+    margin-right: 70px;
+  }
+  .sec-2 .container .navbar a{
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .sec-2 .menu{
+    width:70px;
+  }
+
+  .sec-2 .list{
+    margin-left:70px;
+    margin-top: -70px;
+  }
+
+}
+
 .sec-2 .navlink{
   color:white;
   text-decoration: none;
@@ -294,7 +407,21 @@ box-shadow: 5px 5px 7px rgba(33, 33, 33, 0.7);
   opacity: 1;
 	transform: perspective(400px) rotateY(0deg) scale(1) ;
 }
-
+@media screen and (max-width:480px){
+  .sec-2 nav ul li:after{
+    top:70px;
+    left:0px;
+    opacity: 0.5;
+    transform:perspective(400px) rotateX(90deg);
+  }
+  .sec-2 nav ul li:hover {
+    transform: translateY(-70px);
+  }
+  .sec-2 nav ul li:hover:after {
+    opacity: 1;
+    transform: perspective(400px) rotateX(0deg) scale(1) ;
+  }
+}
 
 .sec-2 nav ul li > div {
 	display: inline-block;

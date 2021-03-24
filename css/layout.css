@@ -39,6 +39,19 @@ body {
   position: fixed;
   height: 200px;
 }
+@meda screen and (max-width:480px){
+  .sec-1 .navbar{
+    text-transform: uppercase;
+    font-size: 1em;
+    z-index: 3;
+    text-decoration: none;
+    margin-top: 3%;
+    margin-right: 30px;
+    margin-left: 70%;
+    position: fixed;
+    height: 200px;
+  }
+}
 .sec-1  .menu{
   display: block;
   color: #F6AE2D;
@@ -97,7 +110,15 @@ body {
   text-align: center;
   margin-left: -5%;
 }
-
+@media screen and (max-width:480px){
+    .header{
+      flex-basis: auto;
+      width:175px;
+    }
+    .h-shape{
+      font-size:1em;
+    }
+}
 /*content box*/
 .content-box{
   z-index: auto;
@@ -107,8 +128,14 @@ body {
     display:flex;
     margin-top: 10%;
 }
+
 .sec-1 .adjust{
   margin-top: calc(10% + 100px );
+}
+@media screen and (min-width:950px){
+  .sec-1 .adjust{
+    margin-top:10% !important;
+  }
 }
 .section-1{
 
