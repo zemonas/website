@@ -9,6 +9,8 @@ $('.section-3').slick({
     {
       breakpoint: 1600,
       settings: {
+        centerMode: true,
+        centerPadding: '60px',
         slidesToShow: 3,
         slidesToScroll: 1,
         infinite: true,
@@ -16,17 +18,19 @@ $('.section-3').slick({
       }
     },
     {
-      breakpoint: 1295,
+      breakpoint: 1000,
       settings: {
-        arrows: false,
+        arrows: true,
         slidesToShow: 2,
         slidesToScroll: 1,
       }
     },
     {
-      breakpoint: 700,
+      breakpoint: 600,
       settings: {
-        arrows: false,
+        centerMode: true,
+        centerPadding: '60px',
+        arrows: true,
         slidesToShow: 1,
         slidesToScroll: 1
       }
