@@ -276,11 +276,7 @@ box-shadow: 5px 5px 7px rgba(33, 33, 33, 0.7);
 .why{
   margin: 10px;
 }
-.container,.background, .top-container{
-  margin: 0;
-  padding: 0;
-  min-height:0;
-}
+
 .container .header{
 }
 .sec-2 .container .navbar{
@@ -687,8 +683,8 @@ box-shadow: 5px 5px 7px rgba(33, 33, 33, 0.7);
 }
 
 .sec-2 footer{
-  position: -webkit-sticky;
-  position: sticky;
+  /*position: -webkit-sticky;
+  position: sticky;*/
 }
 /*/*///*mail*/ //*/
 
