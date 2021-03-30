@@ -24,8 +24,11 @@ body::-webkit-scrollbar {
   background-image: url('../bgimg/meiying-ng-OrwkD-iWgqg-unsplash.jpg');
 }
 .top-container{
-  min-height:0;
 
+}
+@media screen and (max-width:360px){
+  .top-container{
+  }
 }
 .sec-1 .container{
   display:flex;
@@ -44,15 +47,15 @@ body::-webkit-scrollbar {
   position: fixed;
   height: 200px;
 }
-@meda screen and (max-width:480px){
+@media screen and (max-width:480px){
   .sec-1 .navbar{
     text-transform: uppercase;
     font-size: 1em;
     z-index: 3;
     text-decoration: none;
     margin-top: 3%;
-    margin-right: 30px;
-    margin-left: 70%;
+    margin-right: 0px;
+    margin-left: 60%;
     position: fixed;
     height: 200px;
   }
@@ -330,8 +333,7 @@ body::-webkit-scrollbar {
   cursor: pointer;
   pointer-events: none;
   position: absolute;
-  bottom: 20px;
-  left: 20px;
+  padding : 10px;
 }
 .menue a{
   text-decoration: none;
@@ -447,14 +449,11 @@ span {
   transition-delay: 0.7s;
 }
 footer{
-  position: fixed;
- left: 0;
- bottom: 0;
- width: 100%;
- color: white;
+  width: 100%;
+  bottom:3%;
+
 }
 .sec-1 footer:hover{
-  height: 70px;
   background-color: #048BA8;
   transition: linear;
   transition-duration: 0.5s;

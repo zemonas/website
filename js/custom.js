@@ -29,7 +29,7 @@ $('.section-3').slick({
       breakpoint: 600,
       settings: {
         centerMode: true,
-        centerPadding: '60px',
+        centerPadding: '10px',
         arrows: true,
         slidesToShow: 1,
         slidesToScroll: 1

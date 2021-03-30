@@ -184,10 +184,14 @@ box-shadow: 5px 5px 7px rgba(33, 33, 33, 0.7);
     display:inline-block;
     top: 0;
     bottom:0;
-    left:auto;
-    right:-30px;
+    left:-15px;
+    right:0;
     margin:auto;
     margin-bottom: 200px;
+    -o-transform:scale(0.8) rotate(-4deg);
+    -webkit-transform: scale(0.8) rotate(-4deg);
+    -moz-transform: scale(0.8) rotate(-4deg);
+    -ms-transform: scale(0.8) rotate(-4deg);
   }
 }
 .photo{
@@ -354,13 +358,6 @@ box-shadow: 5px 5px 7px rgba(33, 33, 33, 0.7);
 }
 
 /*temporary*/
-:before,:after {
-	box-sizing: border-box;
-}
-
-:after {
-	content: "";
-}
 .sec-2 nav {
   float: left;
 	position: relative;
@@ -689,6 +686,10 @@ box-shadow: 5px 5px 7px rgba(33, 33, 33, 0.7);
 
 }
 
+.sec-2 footer{
+  position: -webkit-sticky;
+  position: sticky;
+}
 /*/*///*mail*/ //*/
 
 .sec-2 .mail-base {
