@@ -29,7 +29,7 @@ $('.section-3').slick({
       breakpoint: 600,
       settings: {
         centerMode: true,
-        centerPadding: '60px',
+        centerPadding: '10px',
         arrows: true,
         slidesToShow: 1,
         slidesToScroll: 1
@@ -78,7 +78,9 @@ $('#work' ).click(function () {
   $('body').addClass('sec-3');
   $('.section-3').css('display','');
 })
-
+$('#contact , #f-b' ).click(function (){
+  $('.bg-ff').toggleClass("closed")
+})
 
 
 const view = document.getElementsByClassName('pre');
