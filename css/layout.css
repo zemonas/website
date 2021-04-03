@@ -466,12 +466,9 @@ footer{
   width: 100%;
   margin:0;
   padding:15px 25px;
-
-
 }
-
-  .sec-1 footer:hover{
-    background-color: #048BA8;
-    transition: linear;
-    transition-duration: 0.5s;
-  }
+.sec-1 footer:hover{
+  background-color: #048BA8;
+  transition: linear;
+  transition-duration: 0.5s;
+}

@@ -78,8 +78,8 @@ $('#work' ).click(function () {
   $('body').addClass('sec-3');
   $('.section-3').css('display','');
 })
-$('.menue' ).click(function () {
-  
+$('#contact , #f-b' ).click(function (){
+  $('.bg-ff').toggleClass("closed")
 })
 
 
