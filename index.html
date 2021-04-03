@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/section-2.css">
     <link rel="stylesheet" href="css/section-3.css">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="fontawesome-free-5.15.3-web/css/all.css">
     <link rel="stylesheet" href="slick/slick.css">
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
@@ -95,6 +97,22 @@
                     <span class="third_item">
                       <i class="material-icons">
                       article
+                      </i>
+                    </span>
+                  </li>
+                  <li id='contact'class="navlink">
+
+                    <div class="mail-icon">
+                    <div class="mail-base">
+                    <div class="mail-top"></div>
+                    </div>
+                   </div>
+
+                    <a  href="#">Contact</a>
+
+                    <span class="fourth_item">
+                      <i class="material-icons">
+                      mail
                       </i>
                     </span>
                   </li>
@@ -415,6 +433,31 @@
             </div>
           </section>
         </div>
+        <div class="bg-ff closed">
+          <div class="ff-c">
+            <div class="position">
+                <i class="fas fa-times fa-2x " id="f-b"></i>
+            </div>
+            <div class="not">
+              <form class="form" name='ff' id="form">
+                  <h2>FEEDBACK</h2>
+                <div class="f-i n">
+                  <input type="text" id="name"  placeholder="Full Name" required>
+                  <i class="far fa-user"></i>
+                </div>
+                <div class="f-i e">
+                  <input type="email" id="email"  placeholder="Email Adress" required>
+                  <i class="far fa-envelope"></i>
+                </div>
+                <textarea id="op" placeholder="enter your opinion" rows="8" cols="25" required></textarea>
+                <input type="submit" id="submit" class='button'></input>
+              </form>
+              <div class="text">
+                <h2>Hello World!</h2>
+              </div>
+          </div>
+          </div>
+        </div>
 
       </div>
     </div>
@@ -448,6 +491,7 @@
     </div>
     <script type="text/javascript" src="slick/slick.min.js"></script>
     <script src="js/custom.js"></script>
+    <script type="text/javascript" src="js/form.js"></script>
   </body>
 
 </html>
