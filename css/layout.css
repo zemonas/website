@@ -136,7 +136,7 @@ body::-webkit-scrollbar {
 }
 
 .sec-1 .adjust{
-  margin-top: calc(10% + 100px );
+  margin-top: calc(10% + 120px );
 }
 @media screen and (min-width:950px){
   .sec-1 .adjust{
